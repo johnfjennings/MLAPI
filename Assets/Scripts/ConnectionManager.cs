@@ -6,11 +6,12 @@ using MLAPI.Spawning;
 using System;
 using MLAPI.Transports.UNET;
 
-public class ConnectionManager : MonoBehaviour
+public class ConnectionManager : NetworkBehaviour
 {
 
     public GameObject connectionButtonPanel;
     public GameObject selectRig;
+    public NetworkManager netManager;
 
     public string ipAddress = "127.0.0.1";
 
